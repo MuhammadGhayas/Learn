@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --gold600: #ffd700;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%
+}
+html,body{
+    font-weight: 300;
+    line-height: 1.4;
+    font-family: "Roboto",sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.5rem;
+}
+section{
+    scroll-margin: 4rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    width:97%;
+    margin: 0 auto;
+}
+/* header */
+header{
+    background-color: #270082;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .5);
+    position: sticky; top: 0;
+    z-index: 5;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    color: #fff;
+}
+.logo{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+nav ul{
+    display: flex;
+    gap: 1.6rem;
+}
+nav ul li{
+    font-size: 1.8rem;
+    border-bottom: .2rem solid transparent;
+    transition: .2s ease-in;
+}
+nav ul li:hover{
+    border-bottom: .2rem solid #fff;
+    transition: .2s ease-in;
+}
+/* section main */
+#main{
+    background-image: url(./images/hero_image.png);
+    color: #fff;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+#main .container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+#main h1{
+    font-size: 8rem;
+}
+#main h2{
+    font-size:4rem;
+}
+#main p{
+    font-size: 3rem;
+}
+/* section music */
+#music{
+    padding-top: 5rem;
+    background: var(--purple500);
+}
+#music .container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.ipad{
+    margin-top: -40rem;
+    position: relative;
+    top: 40rem;
+}
+button{
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+.m-btn{
+    background-color: var(--gold600);
+}
+.secondary-btn{
+    background-color: var(--purple300);
+    color: white;
+}
+.about-music{
+    padding-top: 50rem;
+    display: grid;
+    place-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+  
+#video{
+    background-image: url(images/video.png);
+    min-height: 80rem;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+#video .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: -20rem;
+}
+#main,
+#video{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#gift{
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0;
+    gap: 5rem;
+}  
+.gift-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+  
+  .footer-upper {
+    background-color: var(--purple600);
+    padding: 2rem;
+  }
+  .footer-upper .container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+  }
+  
+  .footer-upper h4 {
+    padding-bottom: 1rem;
+    border-bottom: .2rem solid white;
+    margin-bottom: 1rem;
+  }
+  .footer-lower {
+    background-color: var(--purple300);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  
+  .gift-section {
+    scroll-margin: 12rem;
+  }

@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.5rem;
+    background-color: #eee;
+    border: 1rem solid darkred;
+    min-height: 100vh;
+}
+.hero-img, img{
+    width: 20rem;
+    height: 24rem;
+    border-radius: 50%;
+}
+.container{
+    width: 60%;
+    margin: 4rem auto;
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#top h1{
+    font-size: 4rem;
+    color: darkred;
+}
+#top h4{
+    font-size: 2.3rem;
+    color: darkred;
+    text-align: end;
+}
+#about h1{
+    color: darkred;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+#about p{
+    line-height: 1.4;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    text-align: justify;
+}
+#bio h2{
+    font-size: 3rem;
+    color: darkred;
+    margin: 2rem 0;
+}
+#bio ul{
+    padding-left: 4rem;
+    list-style: decimal;
+}
+#bio ul li{
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+footer{
+    text-align: end;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+}
+footer a{
+    text-decoration: none;
+    color: darkred;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:795px) {
+    .container{
+        width: 80%;
+    }
+    html{
+        font-size: 55%;
+    }
+}
+@media screen and (max-width:570px) {
+    .container{
+        width: 80%;
+    }
+    html{
+        font-size: 45%;
+    }
+    #top{
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application From</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Application Form <span>(Web)</span></h2>
+            <form action="" method="POST">
+                <div class="form-container">
+                    <div class="form-controller">
+                        <label for="first">First Name</label>
+                        <input type="text" name="first" id="first" placeholder="Enter First Name...">
+                    </div>
+                    <div class="form-controller">
+                        <label for="last">Last Name</label>
+                        <input type="text" name="last" id="last" placeholder="Enter Last Name...">
+                    </div>
+                    <div class="form-controller">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-controller">
+                        <label for="job">Job Role</label>
+                        <select name="job" id="job">
+                            <option value="">Select</option>
+                            <option value="">Frontend Developer</option>
+                            <option value="">Backend Developer</option>
+                            <option value="">UI UX Designer</option>
+                        </select>
+                    </div>
+                    <div class="text">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter Address..."></textarea>
+                    </div>
+                    <div class="form-controller">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="Enter City Name">
+                    </div>
+                    <div class="form-controller">
+                        <label for="postal">Postal Code</label>
+                        <input type="text" name="postal" id="postal" placeholder="Enter Postal code">
+                    </div>
+                    <div class="form-controller">
+                        <label for="date">Date</label>
+                        <input type="date" value="2023-01-11">
+                    </div>
+                    <div class="form-controller">
+                        <label for="file">Upload your CV</label>
+                        <input type="file">
+                    </div>
+                </div>
+                <div class="btn">
+                <button type="submit">Apply Now</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
